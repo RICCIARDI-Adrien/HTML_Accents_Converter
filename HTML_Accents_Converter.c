@@ -127,13 +127,21 @@ static unsigned int Convert(FILE *File_Input, FILE *File_Output)
 			case L'Ù':
 				String_Substitution = L"Ugrave";
 				break;
-			
+
 			case L'û':
 				String_Substitution = L"ucirc";
 				break;
 
 			case L'Û':
 				String_Substitution = L"Ucirc";
+				break;
+
+			case L'œ':
+				String_Substitution = L"oelig";
+				break;
+
+			case L'Œ':
+				String_Substitution = L"OElig";
 				break;
 
 			// The character does not need to be converted
